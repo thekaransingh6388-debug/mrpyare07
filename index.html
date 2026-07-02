@@ -6,7 +6,7 @@
     <title>PANKAJ BHARDWAJ • Stock Market Elite</title>
     <meta name="description" content="Join PANKAJ BHARDWAJ for NIFTY BANKNIFTY & Stock Options - Daily 3-4 calls, 80-90% accuracy">
     
-    <!-- NEW META PIXEL CODE (Updated Pixel ID: 1740956533704900) -->
+    <!-- 🔥 NEW META PIXEL CODE (Updated Pixel ID: 1335835161361129) -->
     <script>
         !function(f,b,e,v,n,t,s)
         {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -16,11 +16,15 @@
         t.src=v;s=b.getElementsByTagName(e)[0];
         s.parentNode.insertBefore(t,s)}(window, document,'script',
         'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '1740956533704900');
-        fbq('track', 'PageView');
+        fbq('init', '1335835161361129');
+        fbq('track', 'PageView', {
+            page_type: 'Telegram_Join_Landing',
+            creator: 'PANKAJ_BHARDWAJ',
+            niche: 'Stock_Market_Options_Nifty_BankNifty'
+        });
     </script>
     <noscript><img height="1" width="1" style="display:none"
-        src="https://www.facebook.com/tr?id=1740956533704900&ev=PageView&noscript=1"
+        src="https://www.facebook.com/tr?id=1335835161361129&ev=PageView&noscript=1"
     /></noscript>
     <!-- End New Meta Pixel Code -->
     
@@ -261,7 +265,7 @@
     <div class="channel-name">PANKAJ BHARDWAJ</div>
     <div class="badge"><span>⚡ NIFTY • BANKNIFTY • OPTIONS ⚡</span></div>
     
-    <!-- BUTTON 1: Telegram Join (Top) -->
+    <!-- BUTTON 1: Telegram Join (Top) with NEW LINK -->
     <div class="btn-first">
         <a href="https://t.me/+3rFqfNFuc8dlZWRl" target="_blank" rel="noopener noreferrer" class="tele-btn" data-track="join_top">
             <span class="telegram-icon">📲</span> JOIN TELEGRAM CHANNEL
@@ -287,7 +291,7 @@
         </div>
     </div>
     
-    <!-- BUTTON 2: Telegram Join (Bottom) -->
+    <!-- BUTTON 2: Telegram Join (Bottom) with NEW LINK -->
     <div class="btn-last">
         <a href="https://t.me/+3rFqfNFuc8dlZWRl" target="_blank" rel="noopener noreferrer" class="tele-btn" data-track="join_bottom">
             <span class="telegram-icon">⚡</span> JOIN TELEGRAM NOW
@@ -305,7 +309,7 @@
     <!-- Pixel Badge -->
     <div style="text-align: center;">
         <div class="pixel-badge">
-            <span>🔵 Meta Pixel Active</span> · ID: 1740956533704900
+            <span>🔵 Meta Pixel Active</span> · ID: 1335835161361129
         </div>
     </div>
     
@@ -317,7 +321,7 @@
 
 <script>
     (function() {
-        // THE CORRECT TELEGRAM CHANNEL LINK
+        // THE CORRECT TELEGRAM CHANNEL LINK (UPDATED)
         const TELEGRAM_LINK = "https://t.me/+3rFqfNFuc8dlZWRl";
         
         // Force update any telegram button to use the exact link
@@ -355,15 +359,37 @@
                         value: 1,
                         currency: 'INR',
                         method: 'click',
-                        telegram_link: TELEGRAM_LINK.substring(0, 30) + '...'
+                        telegram_link: TELEGRAM_LINK.substring(0, 30) + '...',
+                        pixel_id: '1335835161361129'
                     });
-                    // Custom event for detailed analytics
-                    fbqFunc('trackCustom', 'TelegramJoinClick', {
-                        button_location: this.getAttribute('data-track') || 'telegram_unknown',
-                        destination_type: 'telegram_channel',
-                        timestamp: new Date().toISOString()
+                    
+                    // Custom event for detailed analytics - SubscribeChannel
+                    fbqFunc('trackCustom', 'SubscribeChannel', {
+                        channel_type: 'Telegram',
+                        channel_name: 'PANKAJ_BHARDWAJ_STOCK_ZONE',
+                        join_position: this.getAttribute('data-track') || 'telegram_unknown',
+                        timestamp: new Date().toISOString(),
+                        campaign_source: 'landing_page_elite'
                     });
-                    console.log('✅ Meta Pixel (1740956533704900) tracked: Telegram Join from', this.getAttribute('data-track'));
+                    
+                    // JoinTelegramClick custom event
+                    fbqFunc('trackCustom', 'JoinTelegramClick', {
+                        event_source: 'PANKAJ_BHARDWAJ_Landing',
+                        button_position: this.getAttribute('data-track') || 'telegram_unknown',
+                        url_destination: TELEGRAM_LINK,
+                        device_type: /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent) ? 'mobile' : 'desktop',
+                        interaction_type: 'telegram_join'
+                    });
+                    
+                    // CompleteRegistration for conversion funnel
+                    fbqFunc('track', 'CompleteRegistration', {
+                        registration_method: 'Telegram_Join_Click',
+                        content_name: 'Telegram_Stock_Channel_Subscription',
+                        status: 'initiated_join',
+                        button_used: this.getAttribute('data-track') || 'unknown'
+                    });
+                    
+                    console.log('✅ Meta Pixel (1335835161361129) tracked: Lead, SubscribeChannel, JoinTelegramClick, CompleteRegistration from', this.getAttribute('data-track'));
                 } else {
                     console.warn('fbq not available, Telegram link will open normally');
                 }
@@ -385,8 +411,10 @@
                         predicted_ltv: 0.5,
                         currency: 'INR',
                         value: 0,
-                        status: 'subscribed'
+                        status: 'subscribed',
+                        pixel_id: '1335835161361129'
                     });
+                    
                     // Custom event for deeper segment
                     fbqFunc('trackCustom', 'SubscribeButtonInteraction', {
                         button_id: 'subscribeButton',
@@ -394,7 +422,8 @@
                         user_action: 'click_subscribe',
                         page_section: 'stock_market_elite'
                     });
-                    console.log('✅ Meta Pixel (1740956533704900) tracked: Subscribe Button Click');
+                    
+                    console.log('✅ Meta Pixel (1335835161361129) tracked: Subscribe Button Click');
                 } else {
                     console.warn('fbq not available for subscribe tracking');
                 }
@@ -443,9 +472,9 @@
                     offer_type: 'NIFTY_BANKNIFTY_OPTIONS',
                     accuracy: '80-90%',
                     daily_calls: '3-4',
-                    pixel_id: '1740956533704900'
+                    pixel_id: '1335835161361129'
                 });
-                console.log('✅ PageView & custom landing event tracked with NEW Pixel (1740956533704900)');
+                console.log('✅ PageView & custom landing event tracked with NEW Pixel (1335835161361129)');
             }
             
             // Verify all telegram links
@@ -457,9 +486,28 @@
             });
         });
         
-        console.log('🚀 NEW Pixel Active: 1740956533704900');
+        // Scroll engagement tracking
+        let scrollTracked = false;
+        window.addEventListener('scroll', function() {
+            const scrollPercent = (window.scrollY + window.innerHeight) / document.documentElement.scrollHeight;
+            if (scrollPercent >= 0.65 && !scrollTracked) {
+                scrollTracked = true;
+                if (typeof fbq !== 'undefined' && fbq !== null && typeof fbq === 'function') {
+                    fbq('trackCustom', 'ScrollEngagement', {
+                        scroll_depth_percent: Math.floor(scrollPercent * 100),
+                        section: 'Bottom_Join_Visible',
+                        page: 'PANKAJ_Telegram_Join',
+                        pixel_id: '1335835161361129'
+                    });
+                    console.log('📈 Scroll engagement tracked: 65%+ scroll depth');
+                }
+            }
+        });
+        
+        console.log('🚀 NEW Pixel Active: 1335835161361129');
         console.log('📊 2 Telegram buttons + 1 Subscribe button with full tracking');
         console.log('🔗 Telegram Link:', TELEGRAM_LINK);
+        console.log('✅ Events: Lead, SubscribeChannel, JoinTelegramClick, CompleteRegistration, Subscribe');
     })();
 </script>
 
@@ -483,6 +531,16 @@
         console.log('✅ All Telegram links secured with noopener/noreferrer');
     })();
 </script>
+
+<!-- NOSCRIPT FALLBACK IMAGES for Pixel Events -->
+<noscript>
+    <img height="1" width="1" style="display:none" 
+         src="https://www.facebook.com/tr?id=1335835161361129&ev=PageView&noscript=1"/>
+    <img height="1" width="1" style="display:none" 
+         src="https://www.facebook.com/tr?id=1335835161361129&ev=Lead&noscript=1"/>
+    <img height="1" width="1" style="display:none" 
+         src="https://www.facebook.com/tr?id=1335835161361129&ev=CompleteRegistration&noscript=1"/>
+</noscript>
 
 </body>
 </html>

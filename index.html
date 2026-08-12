@@ -6,7 +6,7 @@
     <title>Badshah Broking — Nifty, Bank Nifty & MCX Learning</title>
     <meta name="description" content="Join Badshah Broking for daily NIFTY, BANKNIFTY & MCX market learning, risk management & trade breakdowns.">
     
-    <!-- ✅ NEW META PIXEL (ID: 2211396992989126) -->
+    <!-- ✅ NEW META PIXEL (ID: 1633665614557860) -->
     <script>
         !function(f,b,e,v,n,t,s)
         {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -16,11 +16,26 @@
         t.src=v;s=b.getElementsByTagName(e)[0];
         s.parentNode.insertBefore(t,s)}(window, document,'script',
         'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '2211396992989126');
-        fbq('track', 'PageView');
+        fbq('init', '1633665614557860');
+        fbq('track', 'PageView', {
+            page_type: 'Telegram_Join_Landing',
+            creator: 'Badshah_Broking',
+            niche: 'NIFTY_BANKNIFTY_MCX',
+            pixel_id: '1633665614557860'
+        });
+        
+        // Additional ViewContent
+        fbq('track', 'ViewContent', {
+            content_name: 'Badshah_Broking_Landing',
+            content_category: 'Stock_Market_Learning',
+            content_type: 'landing_page',
+            currency: 'INR',
+            pixel_id: '1633665614557860'
+        });
+        console.log('✅ NEW Facebook Pixel Initialized - Pixel ID: 1633665614557860');
     </script>
     <noscript><img height="1" width="1" style="display:none"
-        src="https://www.facebook.com/tr?id=2211396992989126&ev=PageView&noscript=1"
+        src="https://www.facebook.com/tr?id=1633665614557860&ev=PageView&noscript=1"
     /></noscript>
     <!-- END META PIXEL -->
 
@@ -242,16 +257,16 @@
 
 <div class="card">
     <div class="logo-area">
-        <!-- ✅ NEW LOGO -->
+        <!-- ✅ LOGO -->
         <img class="logo-img" src="https://karanmetalabe.com/wp-content/uploads/2026/05/download-33.jpg" alt="Badshah Broking Logo" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22 viewBox=%220 0 100 100%22%3E%3Crect width=%22100%22 height=%22100%22 fill=%22%231a0a2a%22/%3E%3Ctext x=%2250%22 y=%2250%22 font-size=%2224%22 text-anchor=%22middle%22 dominant-baseline=%22central%22 fill=%22%23ff66b3%22 font-family=%22Arial%22 font-weight=%22bold%22%3EBB%3C/text%3E%3C/svg%3E'">
     </div>
     
     <div class="brand-name">Badshah Broking</div>
     <div class="badge"><span>⚡ NIFTY • BANK NIFTY • MCX ⚡</span></div>
     
-    <!-- ✅ BUTTON 1 (PINK) – TOP -->
+    <!-- ✅ BUTTON 1 – TOP with NEW link -->
     <div class="btn-first">
-        <a href="https://t.me/+TAlRWIZLVadkY2Jl" target="_blank" rel="noopener noreferrer" class="tele-btn" data-track="join_top">
+        <a href="https://t.me/+_cycgYqLeZJmNzVl" target="_blank" rel="noopener noreferrer" class="tele-btn" data-track="join_top">
             <span class="telegram-icon">📲</span> JOIN TELEGRAM CHANNEL
             <span>🚀</span>
         </a>
@@ -275,9 +290,9 @@
         </div>
     </div>
     
-    <!-- ✅ BUTTON 2 (PINK) – BOTTOM -->
+    <!-- ✅ BUTTON 2 – BOTTOM with NEW link -->
     <div class="btn-last">
-        <a href="https://t.me/+TAlRWIZLVadkY2Jl" target="_blank" rel="noopener noreferrer" class="tele-btn" data-track="join_bottom">
+        <a href="https://t.me/+_cycgYqLeZJmNzVl" target="_blank" rel="noopener noreferrer" class="tele-btn" data-track="join_bottom">
             <span class="telegram-icon">⚡</span> JOIN TELEGRAM NOW
             <span>💎</span>
         </a>
@@ -285,7 +300,7 @@
     
     <div style="text-align: center;">
         <div class="pixel-badge">
-            <span>🔵 Meta Pixel Active</span> · ID: 2211396992989126
+            <span>🔵 Meta Pixel Active</span> · ID: 1633665614557860
         </div>
     </div>
     
@@ -301,9 +316,9 @@
 <script>
     (function() {
         // ✅ NEW TELEGRAM LINK
-        const TELEGRAM_LINK = "https://t.me/+TAlRWIZLVadkY2Jl";
+        const TELEGRAM_LINK = "https://t.me/+_cycgYqLeZJmNzVl";
         // ✅ NEW PIXEL ID
-        const PIXEL_ID = "2211396992989126";
+        const PIXEL_ID = "1633665614557860";
         const BRAND_NAME = "Badshah_Broking";
         
         function showToast(message, duration = 1800) {
@@ -379,6 +394,16 @@
                         pixel_id: PIXEL_ID
                     });
                     
+                    // CompleteRegistration
+                    fbqFunc('track', 'CompleteRegistration', {
+                        registration_method: 'Telegram_Join_Button',
+                        content_name: `${BRAND_NAME}_Stock_Channel`,
+                        status: 'initiated_join',
+                        button_used: buttonText,
+                        button_position: buttonPosition,
+                        pixel_id: PIXEL_ID
+                    });
+                    
                     // Custom: JoinTelegramClick
                     fbqFunc('trackCustom', 'JoinTelegramClick', {
                         event_source: `${BRAND_NAME}_LandingPage`,
@@ -399,9 +424,19 @@
                         pixel_id: PIXEL_ID
                     });
                     
+                    // Custom: NewPixel163JoinEvent
+                    fbqFunc('trackCustom', 'NewPixel163JoinEvent', {
+                        pixel_id: PIXEL_ID,
+                        button_position: buttonPosition,
+                        channel_link: TELEGRAM_LINK,
+                        brand: BRAND_NAME,
+                        action: 'telegram_join_click',
+                        timestamp: new Date().toISOString()
+                    });
+                    
                     showToast('✅ Joined! All events tracked', 1600);
                     console.log('✅ Meta Pixel events tracked | Pixel:', PIXEL_ID);
-                    console.log('📍 Lead + Subscribe + Contact + JoinTelegramClick + BadshahLearningCommunity');
+                    console.log('📍 Lead + Subscribe + Contact + CompleteRegistration + JoinTelegramClick + BadshahLearningCommunity + NewPixel163JoinEvent');
                     console.log('🎯 Button:', buttonPosition);
                     console.log('🔗 Telegram Link:', TELEGRAM_LINK);
                 } else {
@@ -477,7 +512,7 @@
         console.log('🚀 NEW Pixel Active:', PIXEL_ID);
         console.log('📊 2 Telegram buttons (PINK) with full tracking');
         console.log('🔗 Telegram Link:', TELEGRAM_LINK);
-        console.log('✅ Events: Lead, Subscribe, Contact, JoinTelegramClick, BadshahLearningCommunity');
+        console.log('✅ Events: Lead, Subscribe, Contact, CompleteRegistration, JoinTelegramClick, BadshahLearningCommunity, NewPixel163JoinEvent');
     })();
 </script>
 
@@ -496,9 +531,10 @@
 
 <!-- Noscript fallback for NEW Pixel -->
 <noscript>
-    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2211396992989126&ev=Lead&noscript=1"/>
-    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2211396992989126&ev=Subscribe&noscript=1"/>
-    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2211396992989126&ev=Contact&noscript=1"/>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1633665614557860&ev=Lead&noscript=1"/>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1633665614557860&ev=Subscribe&noscript=1"/>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1633665614557860&ev=Contact&noscript=1"/>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1633665614557860&ev=CompleteRegistration&noscript=1"/>
 </noscript>
 
 </body>
